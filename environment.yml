@@ -1,4 +1,4 @@
-name: repodata-dev
+name: docker-conda-channel-dev
 dependencies:
   - python
   - pip:
