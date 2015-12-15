@@ -1,0 +1,7 @@
+channel
+
+.index.json
+repodata.json
+repodata.json.bz2
+
+*.tar.bz2

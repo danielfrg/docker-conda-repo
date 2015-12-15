@@ -1,0 +1,5 @@
+name: repodata-dev
+dependencies:
+  - python
+  - pip:
+    - watchdog
