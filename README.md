@@ -1,6 +1,6 @@
 # Docker conda-channel
 
-Docker container to create (and serve) a custom conda channel.
+Docker container to create and serve a custom conda channel.
 
 Based on the documentation on [custom channels](http://conda.pydata.org/docs/custom-channels.html)
 
@@ -32,6 +32,6 @@ You can now go to: `http://{DOCKER_HOST}:8080` and see the channel repo.
 
 ## Common errors
 
-1. 403 on packages: this is usually because the container user cannot read the
-packages. Make sure all the `*.tar.bz2` files are readable by all users:
-`chmod 644 *.tar.bz2`
+**403 on packages**: This usually means that the container user executing nginx
+cannot read the packages.
+Make sure all the `tar.bz2` files are readable by all users: `chmod 644 *.tar.bz2`
