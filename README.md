@@ -25,7 +25,7 @@ channel/
 Now start the container sharing the `channel` directory as a volume
 
 ```
-docker run -v $(pwd)/channel:/channel -p 8080:80 danielfrg/conda-channel
+docker run -v $(pwd)/channel:/channel -p 8080:80 -it danielfrg/conda-channel
 ```
 
 You can now go to: `http://{DOCKER_HOST}:8080` and see the channel repo.
