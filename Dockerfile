@@ -8,8 +8,8 @@ RUN rm Miniconda-latest-Linux-x86_64.sh
 RUN /opt/conda/bin/conda install -y -q conda-build
 ENV PATH /opt/conda/bin:$PATH
 
-COPY watch.py /opt/watch.py
 RUN /opt/conda/bin/pip install watchdog
+COPY watch.py /opt/watch.py
 
 RUN mkdir /channel
 WORKDIR /channel
