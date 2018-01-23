@@ -11,7 +11,7 @@ from watchdog.events import FileSystemEventHandler
 class CondaChannelHandler(FileSystemEventHandler):
     channel_dir = None
     subdirs = ("linux-32", "linux-64", "osx-64", "osx-32", "win-64", "win-32",
-               "linux-armv6l", "linux-armv7l")
+               "linux-armv6l", "linux-armv7l", "noarch")
 
     def on_modified(self, event):
         print('New file on:', event.src_path)
